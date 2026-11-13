@@ -13,7 +13,8 @@ here rather than silently in-game.
 
 Adding a trophy later:
   1. datapack: add a loot table under data/porchlight/loot_table/trophies/ that
-     names a player head, plus whatever advancement/function awards it.
+     names a player head, plus a give function for admins to hand it out.
+     Trophies are never awarded automatically.
   2. resource pack: add the model + texture under assets/porchlight/, then add
      one more entry to "cases" in assets/minecraft/items/player_head.json whose
      "when" lists the exact name(s) the loot table gives.
