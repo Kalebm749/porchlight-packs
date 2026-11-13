@@ -1,0 +1,69 @@
+{
+  "type": "minecraft:command",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:player_head",
+          "modifier": [
+            {
+              "type": "minecraft:fill_player_head",
+              "entity": "this"
+            },
+            {
+              "type": "minecraft:set_name",
+              "target": "custom_name",
+              "name": {
+                "text": "Ender Dragon Trophy",
+                "color": "#F2A541",
+                "italic": false
+              }
+            },
+            {
+              "type": "minecraft:set_lore",
+              "entity": "this",
+              "mode": "replace_all",
+              "lore": [
+                {
+                  "text": "Awarded to ",
+                  "color": "gray",
+                  "italic": false,
+                  "extra": [
+                    {
+                      "selector": "@s",
+                      "color": "#FFD58A"
+                    }
+                  ]
+                },
+                {
+                  "text": "for the final blow on the Ender Dragon",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "Porchlight SMP · Season 4",
+                  "color": "#8B5E3C",
+                  "italic": false
+                }
+              ]
+            },
+            {
+              "type": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_data": {
+                  "porchlight": {
+                    "trophy": "ender_dragon",
+                    "season": 4
+                  }
+                },
+                "minecraft:rarity": "epic"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
