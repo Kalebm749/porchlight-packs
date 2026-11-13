@@ -17,6 +17,20 @@
           "type": "minecraft:model",
           "model": "porchlight:item/trophy/ender_dragon"
         }
+      },
+      {
+        "when": [
+          {
+            "text": "Porchlight Trophy",
+            "color": "#F2A541",
+            "italic": false
+          },
+          "Porchlight Trophy"
+        ],
+        "model": {
+          "type": "minecraft:model",
+          "model": "porchlight:item/trophy/early_neighbor"
+        }
       }
     ],
     "fallback": {

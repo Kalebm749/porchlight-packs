@@ -1,0 +1,56 @@
+{
+  "type": "minecraft:command",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:player_head",
+          "modifier": [
+            {
+              "type": "minecraft:fill_player_head",
+              "entity": "this"
+            },
+            {
+              "type": "minecraft:set_name",
+              "target": "custom_name",
+              "name": {
+                "text": "Porchlight Trophy",
+                "color": "#F2A541",
+                "italic": false
+              }
+            },
+            {
+              "type": "minecraft:set_lore",
+              "mode": "replace_all",
+              "lore": [
+                {
+                  "text": "Here before the light came on",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "TheRealmSMP → Porchlight SMP",
+                  "color": "#8B5E3C",
+                  "italic": false
+                }
+              ]
+            },
+            {
+              "type": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_data": {
+                  "porchlight": {
+                    "trophy": "early_neighbor"
+                  }
+                },
+                "minecraft:rarity": "rare"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
