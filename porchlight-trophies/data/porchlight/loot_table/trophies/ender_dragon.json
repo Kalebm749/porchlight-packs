@@ -23,22 +23,10 @@
             },
             {
               "type": "minecraft:set_lore",
-              "entity": "this",
               "mode": "replace_all",
               "lore": [
                 {
-                  "text": "Awarded to ",
-                  "color": "gray",
-                  "italic": false,
-                  "extra": [
-                    {
-                      "selector": "@s",
-                      "color": "#FFD58A"
-                    }
-                  ]
-                },
-                {
-                  "text": "for the final blow on the Ender Dragon",
+                  "text": "For taking part in the Ender Dragon fight",
                   "color": "gray",
                   "italic": false
                 },
